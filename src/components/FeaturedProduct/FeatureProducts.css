@@ -1,0 +1,117 @@
+.featured-products{
+    padding: 40px 5%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+    background-color: #E9EEF5;
+}
+
+.fea-prod{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    gap: 30px;
+    padding-top: 50px;
+}
+.fea-prod .prod{
+    width: 100%;
+    height: 500px;
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    border: 1px solid rgb(213, 213, 213);
+    transition: all 0.4s ease;
+}
+.fea-prod .prod:hover{
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
+}
+
+.prod .prod-img{
+    width: 100%;
+    height: 300px;
+    overflow: hidden;
+}
+.prod .prod-img img{
+    width: 100%;
+    height: 100%;
+    transition: all 0.4s ease;
+}
+.prod .prod-img img:hover{
+    cursor: pointer;
+    transform: scale(1.2);
+}
+
+.prod .prod-head{
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.prod-content{
+    padding: 0 20px;
+    padding-bottom: 40px;
+}
+.prod-head .stars i{
+    color: #EDE861;
+    margin-right: 5px;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.prod-head .price h5{
+    color: #BCBCBC;
+    font-weight: 300;
+    font-size: 18px;
+}
+
+.prod-content h3{
+    color: #3c3c3c;
+    font-size: 28px;
+    font-weight: 300;
+    margin-bottom: 5px;
+}
+
+.prod-content p{
+    font-size: 18px;
+    font-weight: 300;
+    margin-bottom: 15px;
+}
+
+.prod-content h6{
+    font-size: 18px;
+    color: #BCBCBC;
+    font-weight: 300;
+}
+
+@media (max-width: 991px){
+    .prod .prod-img {
+        height: 100px;
+    }
+    .fea-prod .prod {
+        height: 385px;
+        justify-content: start;
+    }
+    .prod-head .stars i {
+        margin-right: 3px;
+        font-size: 12px;
+    }
+    .prod-content h3 {
+        font-size: 22px;
+    }
+    .prod-content p {
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 768px){
+    .fea-prod {
+        flex-direction: column;
+    }
+    .fea-prod .prod, .prod .prod-img {
+        height: auto;
+    }
+}
